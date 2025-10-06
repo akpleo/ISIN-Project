@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>ISIN Update Dashboard</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h2>ISIN Update Dashboard</h2>
+
+    <div class="form-group">
+      <label>Old ISIN</label>
+      <input type="text" id="old_isin" placeholder="Enter old ISIN" />
+    </div>
+
+    <div class="form-group">
+      <label>New ISIN</label>
+      <input type="text" id="new_isin" placeholder="Enter new ISIN" />
+    </div>
+
+    <div class="form-group" id="split_ratio_group" style="display: none;">
+      <label>Split Ratio</label>
+      <input type="number" id="split_rat" placeholder="Enter split ratio" />
+      <button onclick="confirmSplit()">Confirm Split</button>
+    </div>
+
+    <div class="form-group">
+      <label>Actions</label><br />
+      <button onclick="checkCount()">Check Count</button>
+      <button onclick="applySplit()">Apply Split</button>
+      <button onclick="applyBonus()">Apply Bonus</button>
+    </div>
+
+    <div id="result"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
