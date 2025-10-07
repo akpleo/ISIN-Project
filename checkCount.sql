@@ -1,8 +1,8 @@
-Declare
---Create checkCount(
+Create Procedure checkCount(
 @oldIsin varchar(12)='INE485C01011',
 @newIsin varchar(12)='INE485C01029'
---)
+)
+AS
 --drop table #CTWIO_tmp
 
 begin 

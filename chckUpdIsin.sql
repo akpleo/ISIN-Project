@@ -1,5 +1,4 @@
-declare
---Create chckUpdIsin(
+Create Procedure chckUpdIsin(
 @chckCount char = 'N' ,
 @editInsin int = 0 ,
 @issplit int = 0,
@@ -7,7 +6,8 @@ declare
 @splitRat int = 0,
 @oldIsin varchar(12)='',
 @newIsin varchar(12)=''
---)
+)
+AS
 begin
 
 if @chckCount = 'Y'
